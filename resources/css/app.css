@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji';
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAF8;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+    width:420px;
+    background:rgba(255,255,255,.80);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.title{
+    text-align:center;
+    font-size:36px;
+    font-weight:bold;
+    color:#243642;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.form-label{
+    font-weight:600;
+}
+
+.form-control{
+    height:48px;
+    border-radius:10px;
+}
+
+.input-group-text{
+    border-radius:0 10px 10px 0;
+    cursor:pointer;
+}
+
+.btn-login{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:30px;
+    background:#243642;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-login:hover{
+    background:#387478;
+}
+
+.register-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.register-link a{
+    color:#243642;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:576px){
+    .login-card{
+        width:95%;
+        padding:25px;
+    }
+    .title{
+        font-size:28px;
+    }
+}
+
+.navbar{
+    transition:.3s;
+}
+
+.navbar .nav-link{
+    color:#243642;
+    font-weight:500;
+    margin:0 8px;
+    transition:.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color:#387478;
+}
+
+.btn-primary-custom{
+    background:#387478;
+    border:none;
+    color:#fff;
+}
+
+.btn-primary-custom:hover{
+    background:#629584;
+    color:#fff;
+}
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.1)!important;
+}
+
+footer a{
+    transition:.3s;
+}
+
+footer a:hover{
+    color:#E2F1E7!important;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#387478;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
